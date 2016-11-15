@@ -29,11 +29,11 @@ $(document).on('click', 'img', function(){
 	}
 });
 
-// click to initiate submission of search data to API
+// click to: (1) initiate submission of user search ipup to API; and (2) retrieve and append results
 function attachClickEvent(){
 	$('.gifBtn').click(function(){
 		var q = $(this).text(),
-			api = "http://api.giphy.com/v1/gifs/search?";
+			api = "https://api.giphy.com/v1/gifs/search?";
 			
 		$('#gif-area').empty();
 
